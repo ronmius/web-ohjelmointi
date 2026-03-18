@@ -1,0 +1,24 @@
+main {
+    text-align: center;
+    width: 400;
+    height: auto;
+    margin-top: 80;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10;
+    margin-bottom: 10;
+
+}
+section{
+    width: auto;
+    height: 100;
+    text-align: left;
+    margin-top: 10;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10;
+    margin-bottom: 10;
+    background-color: rgb(53, 145, 137);
+    font-family:'Courier New', Courier, monospace;
+    border: 10;
+}
