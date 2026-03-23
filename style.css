@@ -22,3 +22,6 @@ section{
     font-family:'Courier New', Courier, monospace;
     border: 10;
 }
+dialog{
+    background-color: rgba(17, 82, 119, 0.226);
+}
