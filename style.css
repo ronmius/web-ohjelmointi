@@ -21,6 +21,7 @@ section{
     background-color: rgb(53, 145, 137);
     font-family:'Courier New', Courier, monospace;
     border: 10;
+    border-color: mediumaquamarine;
 }
 dialog{
     background-color: rgba(17, 82, 119, 0.226);
