@@ -32,3 +32,25 @@ body{
     margin-left: 64px;
     margin-right: 64px;
 }
+a{
+    color: deepskyblue;
+}
+a:visited{
+    color: brown;
+}
+a:hover{
+    color: rgb(58, 44, 68);
+}
+button{
+    background-color: rgb(58,44,68);
+    color: white;
+}
+button:hover{
+    background-color:deepskyblue ;
+}
+form:focus{
+    background-color: rgb(255, 253, 111);
+}
+li:last-child{
+    font-style: italic;
+}
