@@ -1,19 +1,47 @@
-div{
-    display: flex;
-    flex-direction: row;
-     margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-  background-color: darkgray;
+    .container {
+  display: flex;
+  background-color:darkgray;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-around;
+  height: auto
+;
 }
-.container{
-    display: flex;
-}
-    .container div {
-        display: flex;
-        flex-direction: column;
-  background-color: #f1f1f1;
+
+.container > div {
+  background-color: #4fb2ca9a;
   margin: 10px;
   padding: 20px;
-  font-size: 30px;}
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+    width: 350px
+}
+.collium{
+    display: flex;
+    flex-direction:row;
+    background-color: #4fb2ca9a;
+    align-items: start;
+    justify-content: right;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+.centainer{
+      display: flex;
+  background-color:darkgray;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  height: auto
+;}
+
+img{
+    width: 90px;
+    height: 100px;
+    border-top: 10px;
+    border-bottom: 10px;
+}
 
