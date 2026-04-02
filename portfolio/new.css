@@ -54,3 +54,29 @@ form:focus{
 li:last-child{
     font-style: italic;
 }
+@font-face {
+    font-family:"SmoochSans";
+    src: url("../static/SmoochSans-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Smoochboldsans";
+    src: url("../static/SmoochSans-Bold.ttf");
+    font-weight: bold
+}
+p{
+    font-family: "Robotocondensed";
+} 
+@font-face {
+    font-family: "Robotocondensed";
+    src: url("../static/static/RobotoCondensed-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "robotobold";
+    src: url("../static/static/RobotoCondensed-Bold.ttf");
+    font-weight: bold;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Smoochsans"
+}
