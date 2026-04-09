@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+     grid-template-areas:
+    
+    'tyokalut navigaatio navigaatio'
+    'tyokalut sisalto sivupalkki'
+    'status status status';
+      grid-template-columns: 5em 2fr 1fr;
+  grid-template-rows: 2em auto 1em;
+}
+
+section {
+    grid-area: tyokalut;
+    background-color: red;
+    border-style: solid;
+    border-color: black;
+}
+nav {
+    grid-area: navigaatio;
+    background-color:aqua;
+    border-style: solid;
+    border-color: black;
+}
+main {
+    grid-area: sisalto;
+    background-color: teal;
+    border-style: solid;
+    border-color: black;
+}
+aside {
+    grid-area: sivupalkki;
+    background-color: rgb(122, 188, 233);
+    border-style: solid;
+    border-color: black;
+}
+footer {
+    grid-area: status;
+    background-color: rgb(179, 102, 224);
+    border-style: solid;
+    border-color: black;
+    height: 20px;
+}
