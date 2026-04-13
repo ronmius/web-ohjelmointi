@@ -10,7 +10,16 @@
 </head>
 <body>
     <header><a href="index.html">etusivu</a> <a href="../pohja.html">oikea etusivu</a></header>
-<main><h1>lasku sivu</h1></main>
+<main><h1>lasku sivu</h1> <form>
+    <label for="ekluku">ensinmäinen luku</label><br>
+  <input type="number" id="ekluku" name="ekluku"><br>
+  <label for="tokluku">toinen luku</label><br>
+  <input type="number" id="tokluku" name="tokluku"><br><br>
+  <label for="sum">summa</label>
+  <input type="button" id="sum" onclick="laskin_summa ()"><label for="som">vähennys</label><input type="button" id="som" onclick="laskin_vähennys ()">
+  <label for="sem">kerto</label><input type="button" id="sem" onclick="laskin_kerto ()"> <label for="sam">jako</label><input type="button" id="sam" onclick="laskin_jako ()">
+
+</form></main>
 <section><h1>Muutujat</h1><br><button onclick="summa ()">summa</button><button onclick="vahennys ()">vähennys</button><button onclick="kerto ()">kerto</button><button onclick="jako ()">jako</button></section>
 <footer></footer>
 </body>
