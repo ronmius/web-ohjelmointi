@@ -50,6 +50,7 @@ main {
     border-color: black;
     padding-left: 3em;
     padding-top: 5em;
+    background-image: url(../Näyttökuva\ 2026-04-15\ 125418.png);
 }
 aside {
     grid-area: sivupalkki;
@@ -138,4 +139,8 @@ header{
   main {grid-area: 2 / span 4;}
   aside {grid-area: 2 / span 1;}
   footer {grid-area: 3 / span 6;}
+}
+form{
+  background-image: url(../Näyttökuva\ 2026-04-15\ 125418.png);
+  background-repeat: repeat;
 }

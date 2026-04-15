@@ -14,35 +14,36 @@
     <a href="../pohja.html">oikea etusivu</a></header>
  
 
-<body style="background-color: rgba(24, 25, 116, 0.363);"> <main style="background-color: rgba(17, 82, 119, 0.226);" style="text-align: center;">
-<button command="show-modal" commandfor="lisää">lisää viesti tai kysymys</button>
-        <dialog id="lisää">
+<body style="background-color: rgba(24, 25, 116, 0.363);"> <main style="background-color: rgba(17, 82, 119, 0.226);" style="text-align: center;" style="background-image: url(../Näyttökuva\ 2026-04-15\ 125418.png);">
+
+    <button command="show-modal" commandfor="lisaa">lisää viesti tai kysymys</button>
+    <dialog id="lisaa">
     <summary>lisää viesti tai kysymys</summary>
-        <form action="">
-    <label>viesti</label>
-    <input type="text" name="eknimi" id="eknimi"><br><br>
-    <label>aika </label>
-    <input type="date" name="kaika" id="kaika"><br><br>
-    <label for="">syntymä päivä</label>
-    <input type="date" name="synt" id="synt"><br><br>
-    <label for="">sähköposti</label>
-    <input type="text" name="sähköposti" id="sähköposti"><br><br>
-    suostut siihen että nämä tiedot tulevat julkisesti katsottavaksi ja voi käytää markinoinissa<input type="checkbox"><br><br>
-    <label>onko viesti tai kysymys</label><br><br>
-    <input type="radio" name="kysymy" id="kysymy" >
-    <label for ="kysymy">kysymys</label><br>
-    <input type="radio" name="viestii" id="viestii">
-    <label for ="viestii">viesti</label><br>
-    <button type="submit">lähetä viesti</button>
-    <a href="keskustelusivu.html">takaisin</a>
+        <form>
+        <label>viesti</label>
+        <input type="text" name="bodyField" id="bodyField"><br><br>
+        <label>aika </label>
+        <input type="time" name="kaika" id="kaika"><br><br>
+        <label for="">syntymä päivä</label>
+        <input type="date" name="birthdayField" id="birthdayField"><br><br>
+        <label for="">sähköposti</label>
+        <input type="text" name=" emailField" id="emailField"><br><br>
+        suostut siihen että nämä tiedot tulevat julkisesti katsottavaksi ja voi käytää markinoinissa<input type="checkbox" name="usage" id="usage" value="on"><br><br>
+        <label>onko viesti tai kysymys</label><br><br>
+        <input type="radio" id="viesti" name="fav_language" value="viesti">
+        <label for="viesti">Viesti</label><br>
+        <input type="radio" id="kysymys" name="fav_language" value="kysymys">
+        <label for="kysymys">Kysymys</label><br>
+        <button onclick="send (event)">lähetä viesti</button>
+    
 </form>
 </dialog>
-</main>
+</main> 
 <button command="show-modal" commandfor="viestit">näytä viestit</button>
     <dialog id="viestit">
     <summary>kaikki viestit</summary>
 
-
+   
 <section>
     <p><strong>rockstar.realrockstar@gmail.com</strong>  <strong>10.2.2026 01,42</strong></p>
     <p>GTA 6 on oikea ja tulee ihan pian</p>
