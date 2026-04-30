@@ -1,18 +1,28 @@
-var lista =["Tehtävä 1", "Tehtävä 2"]
+var lista =["Tehtävä 1", "Tehtävä 2",]
 var parent = document.getElementById("ul")
-var element = document.createElement("li")
+
 function paivitalista (){
      teht = document.getElementById("ul")
+     var element = document.createElement("li");
     teht.clear
     for (lesot of lista){
         element.append(lesot)
     }
     console.log(teht)
 }
-function lisaa (){
+var i = 0
+function listest (){
     lisattava = document.getElementById("sana").value;
     teht = document.getElementById("ul");
-    teht.append(element);
+    määrä = Number(document.getElementById("monta").value);
     lista.push(lisattava);
+    console.log(määrä);
+    while (i<määrä){
+        lista.forEach(loista =>{
+        var element = document.createElement("li");
+        teht.append(element);
+        element.append(lista[i]);
+        määrä--;
+    })}}
     paivitalista ();
-}
+
