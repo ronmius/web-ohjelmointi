@@ -31,20 +31,21 @@ let henkilöt = [
     }
 ]
 
-LuoRivit (e)
+
 function LuoRivit (e){
     e.preventDefault()
     reveat = document.getElementById("rivit")
     console.log(reveat)
-    reveat.clear
+    reveat.innerHTML = "";
     // lisättävän henkilön tiedot otetaan näillä
     var lisnim = document.getElementById("Nimi").value;
     var lisika = Number(document.getElementById("Ikä").value);
-    var listyö = document.getElementById("Työ").value;
-    var lisajo = Boolean(document.getElementById("Ajokortti"));
+    var listyö = document.getElementById("Työ").value;//hankitaan kaikki käyttäjän antamat tiedot
+    var lisajo = document.getElementById("Ajokortti").checked;
     if (lisika <0){alert('ikä pitää olla suurempi kuin nolla')};
-    
+    //jos ikä on pienempi kuin nolla niin ylempää oleva koodi pätkä alkaa
     console.log(lisajo);
+    
     henkilöt.push({name:lisnim,age:lisika,job:listyö,driversLicense:lisajo});
     console.log(henkilöt)
     henkilöt.forEach(hlö => {//tämän avulla tehdään oikea määrä rivejä ja muutujia
