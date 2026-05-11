@@ -43,3 +43,39 @@ function laskin_jako (){
     b = tokluku
     jako ()
 }
+var joknaik= new Date()
+function paivamaara (){
+    aika = joknaik.getDate()
+    console.log(aika)
+}
+function aika(){
+    var tunti = joknaik.getHours()
+    var min=joknaik.getMinutes()
+    var sec=joknaik.getSeconds()
+    console.log(tunti,min,sec)
+    console.log(aika)
+}
+function aikajapaiva (){
+    var taika=joknaik.getDate()
+    var tunti = joknaik.getHours()
+    var min=joknaik.getMinutes()
+    var sec=joknaik.getSeconds()
+    console.log(taika,tunti,min,sec)
+}
+function viikonpaiva (){
+    var paiva = ""
+    var  taika=joknaik.getDay().value
+    if (taika = 0){paiva = "sunnuntai"}
+    if (taika = 1){paiva = "maanantai"}
+    if(taika=2){paiva = "tiistai"}
+    if(taika =3){paiva ="keskiviiko"}
+    if(taika =4){paiva="torstai"}
+    if(taika=5){paiva="perjantai"}
+    if(taika=6){paiva="lauantai"}
+    console.log(paiva)
+    console.log(taika)
+}
+function kuukausi (){
+    var taika = joknaik.getMonth()
+    console.log(taika)
+}
