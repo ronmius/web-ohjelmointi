@@ -79,3 +79,59 @@ function kuukausi (){
     var taika = joknaik.getMonth()
     console.log(taika)
 }
+var Veijo = new Set(['luku','poisto'])
+var Elvira = new Set(['luku', 'kirjoitus', 'muokkaus'])
+var Mehdi = new Set (['luku', 'muokkaus', 'poisto'])
+var Tuuli = new Set (['kirjoitus', 'poisto'])
+var Veijotuul = Veijo.union(Tuuli)
+var Mehdielvira = Mehdi.intersection(Elvira)
+var Elviratuuli = Elvira.symmetricDifference(Tuuli)
+for(oikeudet of Veijo){
+    var lista = document.createElement("li")
+    lista.append(oikeudet)
+    var ekaul = document.getElementById("ekalista")
+    ekaul.append(lista)
+}
+
+for(oikeudet of Elvira){
+    var lista = document.createElement("li")
+    lista.append(oikeudet)
+    var ekaul = document.getElementById("tokalista")
+    ekaul.append(lista)
+}
+
+for(oikeudet of Mehdi){
+    var lista = document.createElement("li")
+    lista.append(oikeudet)
+    var ekaul = document.getElementById("kolista")
+    ekaul.append(lista)
+}
+
+
+for(oikeudet of Tuuli){
+    var lista = document.createElement("li")
+    lista.append(oikeudet)
+    var ekaul = document.getElementById("nelista")
+    ekaul.append(lista)
+}
+
+for(oikeudet of Veijotuul){
+    var lista = document.createElement("li")
+    lista.append(oikeudet)
+    var ekaul = document.getElementById("Veijotuuli")
+    ekaul.append(lista)
+}
+
+for(oikeudet of Mehdielvira){
+    var lista = document.createElement("li")
+    lista.append(oikeudet)
+    var ekaul = document.getElementById("Mehdielvira")
+    ekaul.append(lista)
+}
+
+for(oikeudet of Elviratuuli){
+    var lista = document.createElement("li")
+    lista.append(oikeudet)
+    var ekaul = document.getElementById("Elviratuuli")
+    ekaul.append(lista)
+}

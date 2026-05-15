@@ -6,7 +6,7 @@
     <title>muutujia</title>
     <link rel="stylesheet" href="new.css">
     <link rel="stylesheet" href="real grid.css">
-    <script src="muutujia.js"></script>
+    <script src="muutujia.js" defer></script>
 </head>
 <body>
     <header><a href="index.html">etusivu</a> <a href="../pohja.html">oikea etusivu</a></header>
@@ -22,8 +22,49 @@
 </form>
 <div id="paivamaara"><button onclick="paivamaara ()">päivä</button></div><div id="aika"><button onclick="aika ()">aika</button></div>
 <div id="paivajaaika"><button onclick="aikajapaiva ()">aika ja päivä</button></div> <div id="viikonpaiva"><button onclick="viikonpaiva ()">viikon päivä</button></div><div id="kuukausi"><button onclick="kuukausi ()">kuukausi</button></div>
+<div id="test"></div>
+
+<br><br>
+<p>Veijon ja tuulen asiat yhdessä</p>
+<ul id="Veijotuuli">
+
+</ul>
+<p>Mehdin ja Elviran asiat jotka ovat yhteisiä</p>
+<ul id="Mehdielvira">
+
+</ul>
+<p>Elvirian ja tuulen asiat jotka ovat eri</p>
+<ul id="Elviratuuli">
+    
+</ul>
 </main>
-<section><h1>Muutujat</h1><br><button onclick="summa ()">summa</button><button onclick="vahennys ()">vähennys</button><button onclick="kerto ()">kerto</button><button onclick="jako ()">jako</button></section>
+<section style="width: 100px;"><h1>Muutujat</h1><br><button onclick="summa ()">summa</button><button onclick="vahennys ()">vähennys</button><button onclick="kerto ()">kerto</button><button onclick="jako ()">jako</button></section>
+<section id="Veijo">
+    <h2>Veijo</h2>
+    <ul id="ekalista">
+
+    </ul>
+    
+</section>
+<section id="Elvira">
+    <h2>Elvira</h2>
+    <ul id="tokalista">
+
+    </ul>
+</section>
+<section id="Mehdi">
+    <h2>Mehdi</h2>
+    <ul id="kolista">
+
+    </ul>
+</section>
+<section id="Tuuli">
+    <h2>Tuuli</h2>
+    <ul id="nelista">
+
+    </ul>
+</section>
+
 <footer></footer>
 </body>
 </html>
