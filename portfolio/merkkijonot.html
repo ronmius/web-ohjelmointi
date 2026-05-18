@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>merkkijonot</title>
+    <link rel="stylesheet" href="real grid.css">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="merkkijonot.js" defer></script>
+</head>
+<body>
+    <header><a href="index.html">etusivu</a></header>
+    <main>
+        <h3>Poimi kirjain</h3>
+        <label for="text">teskti:</label><input id="text" type="text" ><label for="number">numero:</label><input id="number" type="number">
+        <br><button onclick="poimi ()">Näytä</button><br><div id="pomi"></div>
+        <br>
+        <h3>Löydä indeksi</h3>
+        <label for="teksti1">teksti</label><input id="teksti1" type="text"><label for="teksti2">löydettävä kirjain</label><input id="teksti2" type="text">
+        <button onclick="Löydä ()">Näytä</button><br><div id="löytävä"></div>
+        <br>
+        <h3>Leikaa merkijono</h3>
+        <label for="toksti">teksti:</label><input type="text" id="toksti"> <label for="numero">aloitus numero</label><input type="number" id="numero"><label for="numero2">lopetus numero</label><input type="number" id="numero2">
+        <button onclick="Leikaa ()">Näytä</button><br><div id="Loikaa"></div>
+        <br><h3>Etsi ja korjaa</h3><br>
+        <label for="korjaus1">teksti</label><input type="text" id="korjaus1">  <input type="text" id="korjaus2"><input type="text" id="korjaus3">
+        <button onclick="Korjaa ()">Näytä</button><br><div id="Etsi"></div>
+        <br><h3> Poikki ja pinoon</h3><br>
+        <input type="text" id="pokkitava"><input type="text" id="poikkiva"><button onclick="pilkojja ()">Näytä</button>
+        <ul id="empty">
+
+        </ul>
+    </main>
+    <section></section>
+</body>
+<footer></footer>
+</html>
