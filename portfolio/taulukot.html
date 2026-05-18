@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="real grid.css">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="taulukot.js" defer></script>
+    <title>taulukot</title>
+    <link rel="shortcut icon" href="../Kuva.PNG" type="image/x-icon">
+</head>
+<body>
+    <header></header>
+    <main>
+        <h3>Poimi</h3><br>
+        <label for="ekanumero">Kirjoita numerosi</label><input type="number" id="ekanumero"><button onclick="poimi ()">Näytä</button>
+        <br><div id="division"></div><br>
+        <h3>Löydä indeksi</h3><br>
+        <label for="ekateksti">anna sana</label><input type="text" id="ekateksti"><button onclick="Löydä ()">Näytä</button>
+        <br><div id="toinendivision"></div><br>
+        <h3>Leikaa taulukko</h3><br>
+        <input type="number" id="number1"><input type="number" id="number2"><button onclick="leikaa ()">Näytä</button>
+        <br><ul id="empty ul">
+
+            </ul>
+        <br><h3>Järjestä</h3>
+        <button onclick="Tulosta ()">Tulosta teksti</button><button onclick="järjestä ()">järjestä teksti</button><button onclick="kääntö ()">Käänä tekstien järjestys</button><br>
+        <button onclick="Tulostanum ()">Tulosta numerot</button> <button onclick="järjestänum ()">Järjestä numerot</button><button onclick="kääntönum ()">Käänä numeroiden järjestys</button>
+            <ul id="kolmas tyhjä">
+
+            </ul>
+        <br><h3>Suodata</h3>
+        <input type="number" id="valinta"><button onclick="Tuolstinnumerot ()">Tulosta numerot</button><button onclick="pienemmät ()">Valitse pienemmät</button><button onclick="Suuremmat ()">Valitse suuremmat.</button>
+            <ul id="tyhjä num">
+
+            </ul>
+    </main>
+    <section></section>
+</body>
+<footer></footer>
+</html>
