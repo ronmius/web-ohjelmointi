@@ -135,3 +135,32 @@ for(oikeudet of Elviratuuli){
     var ekaul = document.getElementById("Elviratuuli")
     ekaul.append(lista)
 }
+
+function  Abs () {
+    ekanum = Number(document.getElementById("ekluku").value);
+    alert(Math.abs(ekanum));
+}
+
+function Sqrt (){
+    ekanum = Number(document.getElementById("ekluku").value);
+    alert(Math.sqrt(ekanum))
+}
+function Pow () {
+    ekanum = Number(document.getElementById("ekluku").value);
+    tokluku = Number(document.getElementById("tokluku").value);
+    alert(Math.pow(ekanum, tokluku))
+}
+function Max (){
+    ekanum = Number(document.getElementById("ekluku").value);
+    tokluku = Number(document.getElementById("tokluku").value);
+    alert(Math.max(ekanum, tokluku))
+}
+function Min (){
+    ekanum = Number(document.getElementById("ekluku").value);
+    tokluku = Number(document.getElementById("tokluku").value);
+    alert(Math.min(ekanum, tokluku))
+}
+function Round (){
+    ekanum = Number(document.getElementById("ekluku").value);
+    alert(Math.round(ekanum))
+}
