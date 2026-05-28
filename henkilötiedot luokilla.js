@@ -45,11 +45,10 @@ function jotain (){
         var ajaa = document.createElement("td")
         nimi.innerHTML = hlö.name
         if(hlö.isunderage()){
-            ika.innerHTML= `${hlö.age}🍺`
-            
+            ika.innerHTML=hlö.age;
         }
         else{
-            ika.innerHTML=hlö.age;
+            ika.innerHTML= `${hlö.age}🍺`
         }
         if(hlö.isStudent()){
             työ.innerHTML = `${hlö.job} 🎓`

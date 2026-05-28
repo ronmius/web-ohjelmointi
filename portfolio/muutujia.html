@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>muutujia</title>
     <link rel="stylesheet" href="new.css">
-    <link rel="stylesheet" href="real grid.css">
+    <link rel="stylesheet" href="grid test.css">
     <script src="muutujia.js" defer></script>
 </head>
 <body>
     <header><a href="index.html">etusivu</a> <a href="../pohja.html">oikea etusivu</a></header>
-<main><h1>lasku sivu</h1> <form>
+<nav><a href="../työkokemukset.html">työ kokemukseni</a>
+    <a href="../pohja.html">etusivu</a>
+    <a href="index.html">Portfolio etusivu</a>
+    <a href="../cv.html">CV</a>
+    </nav>
+    <main><h1>lasku sivu</h1> <form>
     <label for="ekluku">ensinmäinen luku</label><br>
   <input type="number" id="ekluku" name="ekluku"><br>
   <label for="tokluku">toinen luku</label><br>
@@ -24,9 +29,7 @@
 <div id="paivajaaika"><button onclick="aikajapaiva ()">aika ja päivä</button></div> <div id="viikonpaiva"><button onclick="viikonpaiva ()">viikon päivä</button></div><div id="kuukausi"><button onclick="kuukausi ()">kuukausi</button></div>
 <button onclick="Abs ()">abs</button><button onclick="Sqrt ()">sqrt</button><button onclick="Pow ()">Pow</button><button onclick="Max ()">Max</button>
 <button onclick="Min ()">Min</button><button onclick="Round ()">Round</button>
-<div id="test"></div>
 
-<br><br>
 <p>Veijon ja tuulen asiat yhdessä</p>
 <ul id="Veijotuuli">
 
@@ -38,15 +41,13 @@
 <p>Elvirian ja tuulen asiat jotka ovat eri</p>
 <ul id="Elviratuuli">
     
-</ul>
-</main>
-<section style="width: 100px;"><h1>Muutujat</h1><br><button onclick="summa ()">summa</button><button onclick="vahennys ()">vähennys</button><button onclick="kerto ()">kerto</button><button onclick="jako ()">jako</button></section>
+</ul><h1>Muutujat</h1><br><button onclick="summa ()">summa</button><button onclick="vahennys ()">vähennys</button><button onclick="kerto ()">kerto</button><button onclick="jako ()">jako</button>
 <section id="Veijo">
     <h2>Veijo</h2>
     <ul id="ekalista">
 
     </ul>
-    
+        
 </section>
 <section id="Elvira">
     <h2>Elvira</h2>
@@ -65,8 +66,10 @@
     <ul id="nelista">
 
     </ul>
-</section>
+</main>
 
-<footer></footer>
+<footer><a href="https://tai.fi">Tai.fi</a>
+    <a href="https://etai.fi">Etai</a>
+    <a href="https://turku.inschool.fi">Wilma</a></footer>
 </body>
 </html>

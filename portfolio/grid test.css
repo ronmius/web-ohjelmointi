@@ -3,25 +3,27 @@ body{
     height: 100vh;
     display: grid;
      grid-template-areas:
-    
-    'tyokalut navigaatio navigaatio'
-    'tyokalut sisalto sivupalkki'
+    'header header header'
+    'navigaatio navigaatio navigaatio'
+    'sivupalkki sisalto sisalto'
     'status status status';
-      grid-template-columns: 5em 2fr 1fr;
-  grid-template-rows: 2em auto 1em;
+      grid-template-columns: 10em 2fr 1fr;
+  grid-template-rows: 5em 3em auto 3em;
+  background-image: url("valtameri.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1800px;
 }
 
-section {
-    grid-area: tyokalut;
-    background-color: red;
-    border-style: solid;
-    border-color: black;
-}
+
 nav {
     grid-area: navigaatio;
-    background-color:aqua;
+    background-color:rgb(17, 145, 145);
     border-style: solid;
     border-color: black;
+    padding-left: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 main {
     grid-area: sisalto;
@@ -41,7 +43,16 @@ footer {
     border-style: solid;
     border-color: black;
     height: 20px;
-    
+    background-image:url("volcano.webp");
+    background-repeat: repeat;
+  }
+ header{
+    grid-area: header;
+    background-color: rgb(112, 177, 189);
+    padding-left: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-indent: 3em;
 }
 @media screen and (min-width: 640px) {
   h1 {
@@ -60,16 +71,7 @@ footer {
     margin-left: 64px;
     margin-right: 64px;
   }
-header{
-    grid-area: header;
-    background-color: rgb(112, 177, 189);
-    padding-left: 3em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-indent: 3em;
-    grid-row: auto;
-    text-align: left;
-}
+
 
 }
 @media screen and (max-width:640px){
@@ -83,30 +85,12 @@ body{
   margin-left: 16px;
   margin-right: 16px;
 }
-header{
-    display: flex;
-    flex-direction: column;
-    grid-area: header;
-    background-color: rgb(112, 177, 189);
-    padding-left: 3em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-indent: 3em;
-    
-}
+
 }
 @media all and (min-width: 650px) {
-  header {grid-area: 1 / span 5;}
-  section {grid-area: 2 / span 1;}
-  main {grid-area: 2 / span 4;}
-  aside {grid-area: 3 / span 6;}
-  footer {grid-area: 4 / span 6;}
+
 }
 
 @media all and (max-width: 640px) {
-  header {grid-area: 1 / span 6;}
-  section {grid-area: 2 / span 1;}
-  main {grid-area: 2 / span 4;}
-  aside {grid-area: 2 / span 1;}
-  footer {grid-area: 3 / span 6;}
+
 }
